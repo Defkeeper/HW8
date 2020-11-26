@@ -31,7 +31,7 @@ public class Main {
                 .stream()
                 .filter(x -> x.getFirstName() != null && x.getLastName() != null && x.getAdress() != null)
                 .sorted(Comparator.comparingInt(x -> x.getAdress().getHouseNumber()))
-                .map (Person::toString)
+                .map(Person::toString)
                 .collect(Collectors.toList());
         modified.forEach(System.out::println);
 
