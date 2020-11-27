@@ -25,7 +25,7 @@ public class Main {
         list1.add(person5);
         list1.add(person6);
 
-        list1.add(null);
+
 
         List<String> modified = list1
                 .stream()
